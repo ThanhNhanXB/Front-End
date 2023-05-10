@@ -74,7 +74,7 @@ header .width {
 
 .nav-link {
     
-    padding: 0px 0px 0px 20px;
+    padding: 28px 0px 28px 20px;
 
 }
 
@@ -180,7 +180,7 @@ header .width {
     padding: 15px 30px; 
 }
 .d-block {
-    padding: 15px 30px; 
+    /* padding: 15px 30px;  */
 }
 .offcanvas-body {
     font-weight: 100px;
@@ -204,20 +204,24 @@ header .container-fluid {
 
 .fa-magnifying-glass {
     font-size: 17px;
+    padding-right:30px;
 
 }
-.display-hide {
+.hide-on-mobile {
     display: none;
+}
+.text-flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media (min-width:992px) {
-    .contain-login {
-        display: inline;
-    }
+    /* .magnifying-glass {
+        display: flex;
+    } */
+   
 
-    .navbar-left {
-        display: none;
-    }
+   
 
     .banner h2 {
         font-size: 45px;
@@ -248,7 +252,20 @@ header .container-fluid {
         margin-top: 30px;
     }
 }
-
+@media (min-width:1200px)
+{
+    .hide-on-mobile {
+        display:flex;
+    }
+    .contain-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-left {
+        display: none;
+    }
+}
 
 @media (min-width:1700px) {
 
