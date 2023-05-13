@@ -1,51 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-
 <body>
-    <div class="text">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quasi rerum cum perferendis nobis harum ratione
-        nisi molestias blanditiis? Quidem obcaecati exercitationem dicta quis cum, asperiores a assumenda. Explicabo,
-        quaerat.
-    </div>
-
-    <div class="text">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quasi rerum cum perferendis nobis harum ratione
-        nisi molestias blanditiis? Quidem obcaecati exercitationem dicta quis cum, asperiores a assumenda. Explicabo,
-        quaerat.
-    </div>
-
-    
-
-    <script>
-        const divText=document.querySelectorAll(".text"); 
-        let oldId; 
-        
-        function a(element)
-            {               
-                if(oldId)
-                {
-                    oldId.style.color="black"; 
-                }
-                element.style.color="red"; 
-                oldId=element;
-            }
-        divText[0].addEventListener("click",function(){a(divText[0])}); 
-        divText[1].addEventListener("click",function(){a(divText[1])}); 
-        divText[0].addEventListener("click",function(){alert("hello")});
-        
-
-
-        //1: dùng foreach gắn tất cả element có addEventListener
-        //2: khi ấn vào 1 element, thì nó sẽ gọi hàm và oldId sẽ lưu trữ cái element đó lại
-        //3: khi ấn vào element khác, thì oldId sẽ được đổi màu, và thay cái mới, sau đó lưu element cũ
-    </script>
+  
 </body>
-
 </html>
