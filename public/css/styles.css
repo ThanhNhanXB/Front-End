@@ -301,8 +301,8 @@ header .container-fluid {
 }
 
 .pos-heart-icon {
-    right: 15%;
-    top: 35%;
+    right: 5%;
+    top:5%;
 }
 
 .img-items {
@@ -464,10 +464,6 @@ header .container-fluid {
     font-weight: 400;
 }
 @media (min-width: 768px) {
-    .pos-heart-icon {
-        right: 9px;
-        top: 9px;
-    }
 
     .info-items {
         padding: 10px 15px 5px 20px;
@@ -532,7 +528,6 @@ header .container-fluid {
         padding: 220px 0;
     }
 }
-
 
 @media (min-width:304px) {
 
