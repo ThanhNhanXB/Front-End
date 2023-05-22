@@ -514,6 +514,10 @@ header .container-fluid {
     margin-left: 5px;
     margin-bottom:10px;
 }
+.tag:hover {
+    background-color: #000;
+    color:#fff;
+}
 h5 { 
     font-size: 15px;
     font-weight: 500;
@@ -561,6 +565,65 @@ h5 {
     color: #fff; 
     
     /* font-weight: 500; */
+}
+.quality {
+    padding: 30px 0px;
+    background: url(../image/bg.jpg);
+    background-position: center;
+    background-repeat:no-repeat
+}
+ 
+.content-left {
+    display: inline-block;
+    padding:15px;
+    justify-content: center;
+    align-items: center;
+}
+.content-left > h2 { 
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 20px;
+
+}
+.icon-quality {
+    margin-right: 20px;
+}
+.content > h3 {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 7px;
+}
+.content > p {
+    font-size: 15px;
+}
+.content-right {
+    padding: 30px; 
+    color: #fff; 
+    width:fit-content;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: #222;
+}
+.list {
+    list-style: none;
+    padding: 0px; 
+    font-size: 15px;
+}
+.list > li { 
+    margin-bottom: 15px;
+}
+.fa-check {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    vertical-align: top;
+    color:#000;
+    line-height: 24px;
+    text-align: center;
+    margin-right:10px;
 }
 @media (min-width: 768px) {
 

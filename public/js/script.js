@@ -40,6 +40,22 @@
       }
     }
   })
+  $('.freelancers-servies').owlCarousel({
+    loop: true,
+    margin: 10,
+    dotsEach:1,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2 
+      },
+      1200: {
+        items: 4
+      }
+    }
+  })
   $('.owl-category').owlCarousel({
     // loop: true,
     margin: 10,
