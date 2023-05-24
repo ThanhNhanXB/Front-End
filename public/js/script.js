@@ -66,12 +66,55 @@
         dotsEach:1,
         items: 2
       },
+      800: {
+        items: 3     
+      },
+      1200: {
+        dotsEach:1,
+        items:7
+      }
+    }
+  })
+
+
+  $('.second-carousel').owlCarousel({
+    // loop: true,
+    margin: 10,
+    nav: false,
+    dots:false,
+    center: true,
+    URLhashListener:true,
+    responsive: {
+      0: {
+        dotsEach:1,
+        items: 3
+      },
       600: {
-        items: 2 
+        items: 3 
       },
       1200: {
         dotsEach:5,
-        items: 4
+        items: 10   
+      }
+    }
+  })
+
+  $('.first-carousel').owlCarousel({
+    // loop: true,
+    margin: 10,
+    nav: false,
+    dots:false,
+    responsive: {
+      0: {
+        dotsEach:1,
+        items: 1
+      },
+      600: {
+        items: 1 
+      },
+      1200: {
+        dotsEach:5,
+        items: 1
       }
     }
   })

@@ -304,7 +304,7 @@ header .container-fluid {
 }
 
 .pos-heart-icon {
-    right: 5%;
+    right: 4%;
     top:5%;
 }
 
@@ -435,7 +435,7 @@ header .container-fluid {
 .item {
     border-radius: 8px;
     overflow: hidden;
-    margin: 10px;
+
 }
 .item-category.item {
     margin: 0px; 
@@ -454,7 +454,16 @@ header .container-fluid {
     font-size: 40px;
     font-weight: 100;
     margin-bottom: 25px;
+}
+.background { 
+    top: 20%;
+    left: 17%;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
     background-color: #FBF7ED;
+    width: 40px;
+    height: 40px;
 }
 .number-services {
     margin-bottom: 6px;
@@ -566,6 +575,9 @@ h5 {
     
     /* font-weight: 500; */
 }
+.img-item-trending { 
+    position: relative;
+}
 .quality {
     padding: 30px 0px;
     background: url(../image/bg.jpg);
@@ -625,6 +637,90 @@ h5 {
     text-align: center;
     margin-right:10px;
 }
+.testimonials {
+    padding: 20px 0px; 
+
+}
+.testimonials > .content {
+    padding: 15px; 
+    text-align: center;
+}
+ .avatar > img { 
+    display: inline!important ;
+    width: 50px !important;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px;
+}
+.item .avatar { 
+    margin: 0px;
+    
+}
+.center .item .avatar { 
+    width: 50px;
+    border: 2px #5BBB7B solid; 
+    border-radius: 50%;
+    padding: 8px ;
+    box-sizing: content-box;
+}
+.content > p { 
+    padding-bottom: 16px;
+    margin: 0;
+    color: rgb(107, 113, 119); 
+    font-weight: 500;
+}
+.img-icon {
+    padding: 20px 0 20px 0;
+}
+.second-carousel .item { 
+    overflow: hidden;
+}
+
+.description { 
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.item > .job {
+    color: rgb(107, 113, 119);
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.owl-dots { 
+    font-size: 15px;
+}
+
+.instruction { 
+    background: url(../image/bg2.jpg
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0 40px 0px; 
+    text-align:
+     center;
+}
+.prices { 
+    display: inline; 
+    text-align: left;
+}
+.carousel-author { 
+    align-items: center;
+}
+.text-hide { 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+.author  { 
+    align-items: center;
+    display: flex;
+
+}
+.heading-category {
+    width:100px;
+}
 @media (min-width: 768px) {
 
     .info-items {
@@ -639,7 +735,7 @@ h5 {
 
     .project-author {
         margin-top: 6px;
-        font-size: 15px;
+        font-size: 14px;
         color: #5BBB7B;
 
     }
@@ -708,14 +804,24 @@ h5 {
 
 @media (min-width:1200px) {
 
+    .heading-category {
+        width: 80px;
+    }
     .contain-login {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
+    .prices { 
+        display: inline; 
+        text-align: left;
+        width: 95px;
+    }
     .navbar-left {
         display: none;
+    }
+    .title-trending {
+        height: 79px;
     }
 }
 
