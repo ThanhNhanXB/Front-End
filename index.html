@@ -22,15 +22,15 @@
           <a class="navbar-brand" href="#"><img src="public/image/Logo.svg" alt=""></a>
           <div class="nav-item pe-xl-2 hide-on-mobile magnifying-glass">
             <a class="nav-link text-gray" href="#"><i class="fa-solid fa-magnifying-glass text-gray"></i></a>
-            <div class="search">
-              This
-            </div>
+
+            
           </div>
           <button class="btn navbar-left justify-content-end" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <span class="navbar-toggler-icon"></span>
           </button>
 
+          
           <div class="offcanvas offcanvas-start navbar-left" tabindex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header d-flex justify-content-sm-spaced-between">
@@ -68,18 +68,73 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link justify-content-sm-start dropdown-toggle me-3" href="#">Home </a>
+                <div class="row hidden-home">
+                  <div class="col-6">
+                    <ul class="list">
+                      <li>Home 1</li>
+                      <li>Home 2</li>
+                      <li>Home 3</li>
+                      <li>Home 4</li>
+                      <li>Home 5</li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list">
+                      <li>Home 6</li>
+                      <li>Home 7</li>
+                      <li>Home 8</li>
+                      <li>Home 9</li>
+                      <li class="chose">Home 10</li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link justify-content-sm-end dropdown-toggle me-3" href="#">Browse Jobs </a>
+                <div class="Browse-jobs">
+                  <ul class="list">
+                  <li><span>Services</span> <i class="fa-solid fa-caret-right ms-auto"></i></li>
+                  <li><span>Projects</span> <i class="fa-solid fa-caret-right"></i></li>
+                  <li><span>Jobs</span> <i class="fa-solid fa-caret-right"></i></li>
+                </ul>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link justify-content-sm-end dropdown-toggle me-3" href="#">User </a>
+                <div class="nav-users">
+                  <ul class="list">
+                  <li><span>Freelancers</span> <i class="fa-solid fa-caret-right ms-auto"></i></li>
+                  <li><span>Employers</span> <i class="fa-solid fa-caret-right"></i></li>
+                  <li><span>Become Seller</span></li>
+                </ul>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link justify-content-sm-end dropdown-toggle me-3" href="#">Blog </a>
+                <div class="blog">
+                  <ul class="list">
+                  <li><span>Blog-Grid</span></li>
+                  <li><span>Blog-V1</span></li>
+                  <li><span>Blog-V2</span></li>
+                  <li><span>Blog-Detail</span></li>
+                </ul>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link justify-content-sm-end dropdown-toggle me-3" href="#">Pages</a>
+                <div class="pages">
+                  <ul class="list">
+                  <li><span>Shop</span></li>
+                  <li><span>Contact</span></li>
+                  <li><span>About V1</span></li>
+                  <li><span>About V2</span></li>
+                  <li><span>Pricing</span></li>
+                  <li><span>Help</span></li>
+                  <li><span>FAQ</span></li>
+                  <li><span>Terms</span></li>
+                  <li><span>404</span></li>
+                </ul>
+                </div>
               </li>
             </ul>
           </div>
@@ -303,7 +358,7 @@
     <div class="category-content">
       <div class="owl-category owl-carousel owl-theme">
         <div class="item item-category position-relative">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="icon-category"><img src="public/image/programming.png" alt=""></div>
           <div class="background"></div>
           <div class="number-services">
             8 services
@@ -311,7 +366,7 @@
           <div class="heading-category">Development & It</div>
         </div>
         <div class="item item-category position-relative">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="icon-category"><img src="public/image/graphic-design.png" alt=""></div>
           <div class="background"></div>
           <div class="number-services">
             8 services
@@ -319,7 +374,7 @@
           <div class="heading-category">Design & Creative</div>
         </div>
         <div class="item item-category position-relative">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="icon-category"><img src="public/image/digital-marketing.png" alt=""></div>
           <div class="background"></div>
           <div class="number-services">
             1 services
@@ -327,7 +382,7 @@
           <div class="heading-category">Digital Marketing</div>
         </div>
         <div class="item item-category position-relative">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="icon-category"><img src="public/image/language.png" alt=""></div>
           <div class="background"></div>
           <div class="number-services">
             1 services
@@ -335,7 +390,7 @@
           <div class="heading-category">Writing & Translation</div>
         </div>
         <div class="item item-category position-relative">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="icon-category"><img src="public/image/microphone.png" alt=""></div>
           <div class="background"></div>
           <div class="number-services">
             0 services
@@ -343,14 +398,15 @@
           <div class="heading-category">Music & Audio</div>
         </div>
         <div class="item item-category position-relative">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="icon-category"><img src="public/image/video-file.png" alt=""></div>
+          <div class="background"></div>
           <div class="number-services">
             0 services
           </div>
           <div class="heading-category">Video & Animation</div>
         </div>
         <div class="item item-category position-relative">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="icon-category"><img src="public/image/graph.png" alt=""></div>
           <div class="background"></div>
           <div class="number-services">
             4 services
@@ -358,7 +414,7 @@
           <div class="heading-category">Finance & Accounting</div>
         </div>
         <div class="item item-category position-relative">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="icon-category"><img src="public/image/pencil-and-ruler.png" alt=""></div>
           <div class="background"></div>
           <div class="number-services">
             1 services
@@ -1065,25 +1121,42 @@
         </div>
 
 
-
       </div>
       <div class="content-center">
         <div class="second-slideshow">
-          <div class="avatar">
-            <img src="public/image/author-img2.jpg" alt="" class="img-author-cir">
+          <div class="second-carousel owl-carousel owl-theme">
+            <div class="item">
+              <div class="avatar">
+                <img src="public/image/author-img2.jpg" alt="" class="img-author-cir">
+              </div>
+
+            </div>
+            <div class="item">
+              <div class="avatar">
+                <img src="public/image/author-img3.jpg" alt="" class="img-author-cir">
+              </div>
+            </div>
+            <div class="item">
+              <div class="avatar">
+                <img src="public/image/author-img5.jpg" alt="" class="img-author-cir">
+              </div>
+            </div>
+            <div class="item">
+              <div class="avatar">
+                <img src="public/image/author-img5.jpg" alt="" class="img-author-cir">
+              </div>
+            </div>
+            <div class="item">
+              <div class="avatar">
+                <img src="public/image/author-img5.jpg" alt="" class="img-author-cir">
+              </div>
+            </div>
           </div>
-          <div class="avatar">
-            <img src="public/image/author-img3.jpg" alt="" class="img-author-cir">
-          </div>
-          <div class="avatar">
-            <img src="public/image/author-img5.jpg" alt="" class="img-author-cir">
-          </div>
-          <div class="avatar">
-            <img src="public/image/author-img5.jpg" alt="" class="img-author-cir">
-          </div>
-          <div class="avatar">
-            <img src="public/image/author-img5.jpg" alt="" class="img-author-cir">
-          </div>
+         
+          
+         
+         
+         
         </div>
 
 
@@ -1362,8 +1435,8 @@
               </div>
             </form>
             <h2>Apps</h2>
-            <a href="#" class="app">Icon iOS App</a>
-            <a href="#" class="app">Icon Android App</a>
+            <a href="#" class="app"> <i class="fa-brands fa-apple"></i> iOS App</a>
+            <a href="#" class="app"><i class="fa-brands fa-android"></i> Android App</a>
           </div>
 
 
@@ -1372,7 +1445,7 @@
           <p>© Freeio. 2022 CreativeLayers. All rights reserved.</p>
           <select name="option-language" id="language">
             <option value="English">English</option>
-            <option value="Itali"">Itali</option>
+            <option value="Itali">Itali</option>
             <option value=" French">French</option>
 
           </select>

@@ -1,24 +1,4 @@
-// $('.owl-carousel').owlCarousel({
-//     loop: true,
-//     margin: 10,
-//     nav: true,
-//     navText: [
-//       '<span class="pre-btn"><i class="fa-solid fa-chevron-left"></i></span>'
-//       ,`<span class="next-btn"><i class="fa-solid fa-chevron-right"></i></span>`
-//     ],  
-//     responsive: {
-//       0: {
-//         items: 1
-//       },
-//       600: {
-   
-//         items: 2
-//       },
-//       1000: {
-//         items: 4
-//       }
-//     }
-//   })
+
   $('.trending-servies').owlCarousel({
     loop: true,
     margin: 10,
@@ -112,6 +92,23 @@
       }
     }
   })
+  $('.second-carousel').owlCarousel({
+    margin: 10,
+    nav: false,
+    dots:false,
+    responsive: {
+      0: {
+        dotsEach:1,
+        items: 3
+      },
+      600: {
+        items: 5
+      },
+      1200: {
+        items: 5
+      }
+    }
+  })
   $('.brand-carousel').owlCarousel({
     loop: false,
     dots: false,
@@ -123,6 +120,7 @@
     ],  
     responsive: {
       0: {
+        margin: 50,
         items: 3
       },
       600: {
@@ -138,4 +136,4 @@
       }
     }
   })
- 
+
