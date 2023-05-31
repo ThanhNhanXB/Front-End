@@ -68,12 +68,18 @@
         padding-left: 20px;
     }
 
-    .nav-link:hover {
+    .nav-hover:hover .nav-link {
         border-top: 2px solid #5bbb7b;
         padding: 26px 0px;
         color: #5bbb7b;
     }
-
+    .hidden-home .col-6 { 
+        padding: 0px; 
+    }
+    .hidden-home li:hover { 
+            background-color: #F0EFEC;
+            border-left: #5BBB7B 2px solid;
+    }
     .nav-link {
         padding: 28px 0px 28px 20px;
 
@@ -998,11 +1004,7 @@
         display: none;
     }
     
-    .hidden-home .col-6 { 
-        padding-left: 25px;
-        padding-right: 0px;
-    }
-    .nav-item:hover .hidden-home { 
+    .nav-hover:hover .hidden-home { 
         display: flex;
         position: absolute; 
         width: 400px;
@@ -1024,57 +1026,73 @@
 
     .Browse-jobs .list li { 
         display:flex;
+        transition: 0.05s;
+        line-height: 45px;
+        margin-bottom: 0px;
         justify-content: space-between;
-        
+        align-items: center;
     }
 
     .nav-users .list li { 
         display:flex;
         justify-content: space-between;
-        
+        line-height: 45px;
+        align-items: center;
+        padding:0 25px; 
+        margin-bottom: 0;
+    }
+    .nav-hover li:hover{ 
+        background-color: #f0efec;
+        border-left: 2px solid #5BBB7B;
     }
     .Browse-jobs .list,.nav-users .list { 
         width: 100%;
     }
-    .nav-item:hover .Browse-jobs { 
+    .Browse-jobs li , .blog li { 
+        padding: 0 25px; 
+    }
+    .Browse-jobs li:hover { 
+        background-color: #f0efec;
+        border-left: 2px solid #5BBB7B;
+    }
+
+    .blog li , .pages li { 
+        width: 230px; 
+        margin: 0;
+        transition: 0.05s;
+        line-height: 45px;
+        padding-left: 20px;
+        box-sizing: unset;
+    }
+    .nav-hover:hover .Browse-jobs { 
         display:flex;
         position: absolute; 
         width: 230px;
-        line-height: 15px;
-        padding: 25px; 
         border-radius: 4px;
         background-color: #fff;
         justify-content: space-between;
         font-weight: 500; 
     }
-    .nav-item:hover .nav-users { 
+    .nav-hover:hover .nav-users { 
         display:flex;
         position: absolute; 
         width: 230px;
-        line-height: 15px;
-        padding: 25px; 
         border-radius: 4px;
         background-color: #fff;
         justify-content: space-between;
         font-weight: 500; 
     }
-    .nav-item:hover .blog { 
+    .nav-hover:hover .blog { 
         display:flex;
         position: absolute; 
-        width: 230px;
-        line-height: 15px;
-        padding: 25px; 
         border-radius: 4px;
         background-color: #fff;
         justify-content: space-between;
         font-weight: 500; 
     }
-    .nav-item:hover .pages { 
+    .nav-hover:hover .pages { 
         display:flex;
         position: absolute; 
-        width: 230px;
-        line-height: 15px;
-        padding: 25px; 
         border-radius: 4px;
         background-color: #fff;
         justify-content: space-between;
