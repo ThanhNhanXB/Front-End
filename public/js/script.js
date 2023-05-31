@@ -96,15 +96,19 @@
     margin: 10,
     nav: false,
     dots:false,
+    center: true,
     responsive: {
       0: {
+        loop:true,
         dotsEach:1,
         items: 3
       },
       600: {
+        center:false,
         items: 5
       },
       1200: {
+        center:false,
         items: 5
       }
     }
@@ -120,7 +124,7 @@
     ],  
     responsive: {
       0: {
-        margin: 50,
+        margin: 80,
         items: 3
       },
       600: {
