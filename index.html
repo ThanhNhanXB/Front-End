@@ -21,13 +21,16 @@
         <nav class="navbar navbar-expand-xl navbar-light bg-white d-flex ">
           <a class="navbar-brand" href="#"><img src="public/image/Logo.svg" alt=""></a>
           <div class="nav-item pe-xl-2 hide-on-mobile magnifying-glass">
-            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass text-gray"></i></a>
+            <a class="nav-link text-gray" href="#"><i class="fa-solid fa-magnifying-glass text-gray"></i></a>
+
+            
           </div>
           <button class="btn navbar-left justify-content-end" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <span class="navbar-toggler-icon"></span>
           </button>
 
+          
           <div class="offcanvas offcanvas-start navbar-left" tabindex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header d-flex justify-content-sm-spaced-between">
@@ -63,20 +66,75 @@
           </div>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <li class="nav-item nav-hover">
                 <a class="nav-link justify-content-sm-start dropdown-toggle me-3" href="#">Home </a>
+                <div class="row hidden-home">
+                  <div class="col-6">
+                    <ul class="list">
+                      <li>Home 1</li>
+                      <li>Home 2</li>
+                      <li>Home 3</li>
+                      <li>Home 4</li>
+                      <li>Home 5</li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list">
+                      <li>Home 6</li>
+                      <li>Home 7</li>
+                      <li>Home 8</li>
+                      <li>Home 9</li>
+                      <li class="chose">Home 10</li>
+                    </ul>
+                  </div>
+                </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item nav-hover">
                 <a class="nav-link justify-content-sm-end dropdown-toggle me-3" href="#">Browse Jobs </a>
+                <div class="Browse-jobs">
+                  <ul class="list">
+                  <li><span>Services</span> <i class="fa-solid fa-caret-right ms-auto"></i></li>
+                  <li><span>Projects</span> <i class="fa-solid fa-caret-right"></i></li>
+                  <li><span>Jobs</span> <i class="fa-solid fa-caret-right"></i></li>
+                </ul>
+                </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item nav-hover">
                 <a class="nav-link justify-content-sm-end dropdown-toggle me-3" href="#">User </a>
+                <div class="nav-users">
+                  <ul class="list">
+                  <li><span>Freelancers</span> <i class="fa-solid fa-caret-right ms-auto"></i></li>
+                  <li><span>Employers</span> <i class="fa-solid fa-caret-right"></i></li>
+                  <li><span>Become Seller</span></li>
+                </ul>
+                </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item nav-hover">
                 <a class="nav-link justify-content-sm-end dropdown-toggle me-3" href="#">Blog </a>
+                <div class="blog">
+                  <ul class="list">
+                  <li><span>Blog-Grid</span></li>
+                  <li><span>Blog-V1</span></li>
+                  <li><span>Blog-V2</span></li>
+                  <li><span>Blog-Detail</span></li>
+                </ul>
+                </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item nav-hover">
                 <a class="nav-link justify-content-sm-end dropdown-toggle me-3" href="#">Pages</a>
+                <div class="pages">
+                  <ul class="list">
+                  <li><span>Shop</span></li>
+                  <li><span>Contact</span></li>
+                  <li><span>About V1</span></li>
+                  <li><span>About V2</span></li>
+                  <li><span>Pricing</span></li>
+                  <li><span>Help</span></li>
+                  <li><span>FAQ</span></li>
+                  <li><span>Terms</span></li>
+                  <li><span>404</span></li>
+                </ul>
+                </div>
               </li>
             </ul>
           </div>
@@ -127,8 +185,8 @@
     <div class="carousel-trending">
       <div class="trending-servies owl-carousel owl-theme position-relative">
         <div class="item">
-          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
           <div class="img-item-trending">
+            <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
             <img src="public/image/slideshow2.jpg" alt="">
           </div>
           <div class="info-trending">
@@ -139,21 +197,21 @@
               <a href="#">Web development, with HTML, CSS, JavaScript and PHP</a>
             </h2>
             <p class="review"><i class="fa-solid fa-star"></i> <span class="vote">4.7</span> (3 review)</p>
-            <div class="carousel-author d-flex justify-content-between" href="#">
-              <a class="author d-inline text-decoration-none">
+            <div class="carousel-author d-flex justify-content-between">
+              <a class="author text-decoration-none">
                 <img src="public/image/author-img2.jpg" class="img-author" alt="">
-                <span class="ps-2 text-green">Agent Pakulla</span>
+                <span class="ps-2 text-hide text-green text-hide">Agent Pakulla</span>
               </a>
-              <div class="prices">
+              <div class="prices d-inline text-end">
                 Starting at: <span>$29</span>
               </div>
             </div>
           </div>
         </div>
         <div class="item">
-          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
 
           <div class="img-item-trending">
+            <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
             <img src="public/image/slideshow3.jpg" alt="">
           </div>
           <div class="info-trending">
@@ -164,21 +222,21 @@
               <a href="#">Developers drop the framework folder into a new parent</a>
             </h2>
             <p class="review"><i class="fa-solid fa-star"></i> <span class="vote">4.5</span> (2 review)</p>
-            <div class="carousel-author d-flex justify-content-between" href="#">
-              <a class="author d-inline text-decoration-none">
+            <div class="carousel-author d-flex justify-content-between">
+              <a class="author text-decoration-none">
                 <img src="public/image/author-img3.jpg" class="img-author" alt="">
-                <span class="ps-2 text-green">John Powell</span>
+                <span class="ps-2 text-hide text-green">John Powell</span>
               </a>
-              <div class="prices">
+              <div class="prices d-inline text-end">
                 Starting at: <span>$128</span>
               </div>
             </div>
           </div>
         </div>
         <div class="item">
-          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
 
           <div class="img-item-trending">
+            <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
             <img src="public/image/slideshow4.jpg" alt="">
           </div>
           <div class="info-trending">
@@ -189,12 +247,12 @@
               <a href="#">Flexibility & Customization with CMS vs PHP Framework</a>
             </h2>
             <p class="review"><i class="fa-solid fa-star"></i> <span class="vote">5.0</span> (1 review)</p>
-            <div class="carousel-author d-flex justify-content-between" href="#">
-              <a class="author d-inline text-decoration-none">
+            <div class="carousel-author d-flex justify-content-between">
+              <a class="author text-decoration-none">
                 <img src="public/image/author-img4.jpg" class="img-author" alt="">
-                <span class="ps-2 text-green">Thomas Powell</span>
+                <span class="ps-2 text-hide text-green">Thomas Powell</span>
               </a>
-              <div class="prices">
+              <div class="prices d-inline text-end">
                 Starting at: <span>$99</span>
               </div>
             </div>
@@ -202,9 +260,9 @@
 
         </div>
         <div class="item">
-          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
 
           <div class="img-item-trending">
+            <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
             <img src="public/image/slideshow5.jpg" alt="">
           </div>
           <div class="info-trending">
@@ -215,12 +273,12 @@
               <a href="#">PHP framework that you can use to create your own custom</a>
             </h2>
             <p class="review"><i class="fa-solid fa-star"></i> <span class="vote">3.5</span> (3 review)</p>
-            <div class="carousel-author d-flex justify-content-between" href="#">
-              <a class="author d-inline text-decoration-none">
+            <div class="carousel-author d-flex justify-content-between">
+              <a class="author text-decoration-none">
                 <img src="public/image/author-img.png" class="img-author" alt="">
-                <span class="ps-2 text-green">Ali Tufan</span>
+                <span class="ps-2 text-hide text-green">Ali Tufan</span>
               </a>
-              <div class="prices">
+              <div class="prices d-inline text-end">
                 Starting at: <span>$158</span>
               </div>
             </div>
@@ -228,8 +286,8 @@
 
         </div>
         <div class="item">
-          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
           <div class="img-item-trending">
+            <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
             <img src="public/image/slideshow7.jpg" alt="">
           </div>
           <div class="info-trending">
@@ -240,12 +298,12 @@
               <a href="#">I will often turn to a PHP framework to compose My code</a>
             </h2>
             <p class="review"><i class="fa-solid fa-star"></i> <span class="vote">4.0</span> (3 review)</p>
-            <div class="carousel-author d-flex justify-content-between" href="#">
-              <a class="author d-inline text-decoration-none">
+            <div class="carousel-author d-flex justify-content-between">
+              <a class="author text-decoration-none">
                 <img src="public/image/author-img.png" class="img-author" alt="">
-                <span class="ps-2 text-green">Ali Tufan</span>
+                <span class="ps-2 text-hide text-green">Ali Tufan</span>
               </a>
-              <div class="prices">
+              <div class="prices d-inline text-end">
                 Starting at: <span>$58</span>
               </div>
             </div>
@@ -253,9 +311,9 @@
 
         </div>
         <div class="item">
-          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
 
           <div class="img-item-trending">
+            <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
             <img src="public/image/slideshow1.jpg" alt="">
           </div>
           <div class="info-trending">
@@ -266,12 +324,12 @@
               <a href="#">Web development, with HTML, CSS, JavaScript and PHP</a>
             </h2>
             <p class="review"><i class="fa-solid fa-star"></i> <span class="vote">4.5</span> (3 review)</p>
-            <div class="carousel-author d-flex justify-content-between" href="#">
-              <a class="author d-inline text-decoration-none">
+            <div class="carousel-author d-flex justify-content-between">
+              <a class="author text-decoration-none">
                 <img src="public/image/author-img.png" class="img-author" alt="">
-                <span class="ps-2 text-green">Ali Tufan</span>
+                <span class="ps-2 text-hide text-green">Ali Tufan</span>
               </a>
-              <div class="prices">
+              <div class="prices d-inline text-end">
                 Starting at: <span>$29</span>
               </div>
             </div>
@@ -299,57 +357,65 @@
     </div>
     <div class="category-content">
       <div class="owl-category owl-carousel owl-theme">
-        <div class="item item-category">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="item item-category position-relative">
+          <div class="icon-category"><img src="public/image/programming.png" alt=""></div>
+          <div class="background"></div>
           <div class="number-services">
             8 services
           </div>
           <div class="heading-category">Development & It</div>
         </div>
-        <div class="item item-category">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="item item-category position-relative">
+          <div class="icon-category"><img src="public/image/graphic-design.png" alt=""></div>
+          <div class="background"></div>
           <div class="number-services">
             8 services
           </div>
           <div class="heading-category">Design & Creative</div>
         </div>
-        <div class="item item-category">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="item item-category position-relative">
+          <div class="icon-category"><img src="public/image/digital-marketing.png" alt=""></div>
+          <div class="background"></div>
           <div class="number-services">
             1 services
           </div>
           <div class="heading-category">Digital Marketing</div>
         </div>
-        <div class="item item-category">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="item item-category position-relative">
+          <div class="icon-category"><img src="public/image/language.png" alt=""></div>
+          <div class="background"></div>
           <div class="number-services">
             1 services
           </div>
           <div class="heading-category">Writing & Translation</div>
         </div>
-        <div class="item item-category">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="item item-category position-relative">
+          <div class="icon-category"><img src="public/image/microphone.png" alt=""></div>
+          <div class="background"></div>
           <div class="number-services">
             0 services
           </div>
           <div class="heading-category">Music & Audio</div>
         </div>
-        <div class="item item-category">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="item item-category position-relative">
+          <div class="icon-category"><img src="public/image/video-file.png" alt=""></div>
+          <div class="background"></div>
           <div class="number-services">
             0 services
           </div>
           <div class="heading-category">Video & Animation</div>
         </div>
-        <div class="item item-category">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="item item-category position-relative">
+          <div class="icon-category"><img src="public/image/graph.png" alt=""></div>
+          <div class="background"></div>
           <div class="number-services">
             4 services
           </div>
           <div class="heading-category">Finance & Accounting</div>
         </div>
-        <div class="item item-category">
-          <div class="icon-category"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="item item-category position-relative">
+          <div class="icon-category"><img src="public/image/pencil-and-ruler.png" alt=""></div>
+          <div class="background"></div>
           <div class="number-services">
             1 services
           </div>
@@ -661,6 +727,733 @@
     </div>
 
   </div>
+  <!-- Slide show freelancers-->
+  <div class="wrap-slideshow container-fluid">
+    <div class="row">
+      <div class="col-md-7 col-sm-0 text-sm-left">
+        <h2 class="title-h2">
+          Highest Rated Freelancers
+        </h2>
+        <p class="text-gray">
+          Lorem ipsum dolor sit amet, consectetur.
+        </p>
+      </div>
+      <div class="col-md-5 col-sm-0 d-flex justify-content-md-end align-items-md-center"><a href="#"
+          class="text-green text-decoration-none pb-4">All Freelancers <i class="fa-solid fa-arrow-right"
+            style="font-size:14px;"></i></a></div>
+    </div>
+    <div class="carousel-freelancers">
+      <div class="freelancers-servies owl-carousel owl-theme ">
+        <div class="item item-freelancers position-relative">
+          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
+          <div class="top-content text-center">
+            <div class="avatar-freelancers text-center">
+              <img src="public/image/author-img2.jpg" alt="">
+            </div>
+            <h3 class="freelancers-name text-center">
+              Agent Pakulla
+            </h3>
+            <p class="freelancers-job text-center">
+              Nursing Assitant
+            </p>
+            <p class="review text-center"><i class="fa-solid fa-star"></i> <span class="vote">4.0</span> (3 review)</p>
+            <div class="tag-freelancers">
+              <a href="#" class="tag">Design Writing</a>
+              <a href="#" class="tag">HTML5</a>
+              <span>+1</span>
+            </div>
+          </div>
+          <div class="bottom-content">
+            <div class="location">
+              <h5>Location: </h5>
+              <p>Los Angeles</p>
+            </div>
+            <div class="Rate">
+              <h5>Rate: </h5>
+              <p>$60 - 65 / hr</p>
+            </div>
+            <div class="profiles">
+              <a href="" class="btn">View Profiles <span class="arrow-right-up"><i
+                    class="fa-solid fa-arrow-up"></i></span></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="item item-freelancers position-relative">
+          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
+          <div class="top-content text-center">
+            <div class="avatar-freelancers text-center">
+              <img src="public/image/author-img3.jpg" alt="">
+            </div>
+            <h3 class="freelancers-name text-center">
+              John Powell
+            </h3>
+            <p class="freelancers-job text-center">
+              Product Manager
+            </p>
+            <p class="review text-center"><i class="fa-solid fa-star"></i> <span class="vote">3.0</span> (1 review)</p>
+            <div class="tag-freelancers">
+              <a href="#" class="tag">Animation</a>
+              <a href="#" class="tag">Creative</a>
+              <span>+1</span>
+            </div>
+          </div>
+          <div class="bottom-content">
+            <div class="location">
+              <h5>Location: </h5>
+              <p>Los Angeles</p>
+            </div>
+            <div class="Rate">
+              <h5>Rate: </h5>
+              <p>$55 - $60 / hr</p>
+            </div>
+            <div class="profiles">
+              <a href="" class="btn">View Profiles <span class="arrow-right-up"><i
+                    class="fa-solid fa-arrow-up"></i></span></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="item item-freelancers position-relative">
+          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
+          <div class="top-content text-center">
+            <div class="avatar-freelancers text-center">
+              <img src="public/image/author-img4.jpg" alt="">
+            </div>
+            <h3 class="freelancers-name text-center">
+              Thomas Powell
+            </h3>
+            <p class="freelancers-job text-center">
+              Design & Creative
+            </p>
+            <p class="review text-center"><i class="fa-solid fa-star"></i> <span class="vote">4.0</span> (1 review)</p>
+            <div class="tag-freelancers">
+              <a href="#" class="tag">Creative</a>
+              <a href="#" class="tag">Figma</a>
+              <span>+1</span>
+            </div>
+          </div>
+          <div class="bottom-content">
+            <div class="location">
+              <h5>Location: </h5>
+              <p>Los Angeles</p>
+            </div>
+            <div class="Rate">
+              <h5>Rate: </h5>
+              <p>$25 - $30 / hr</p>
+            </div>
+            <div class="profiles">
+              <a href="" class="btn">View Profiles <span class="arrow-right-up"><i
+                    class="fa-solid fa-arrow-up"></i></span></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="item item-freelancers position-relative">
+          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
+          <div class="top-content text-center">
+            <div class="avatar-freelancers text-center">
+              <img src="public/image/author-img5.jpg" alt="">
+            </div>
+            <h3 class="freelancers-name text-center">
+              Tom Willson
+            </h3>
+            <p class="freelancers-job text-center">
+              Marketing Manger
+            </p>
+            <p class="review text-center"><i class="fa-solid fa-star"></i> <span class="vote">4.5</span> (2 review)</p>
+            <div class="tag-freelancers">
+              <a href="#" class="tag">Creative</a>
+              <a href="#" class="tag">Design Writing</a>
+              <span>+1</span>
+            </div>
+          </div>
+          <div class="bottom-content">
+            <div class="location">
+              <h5>Location: </h5>
+              <p>Los Angeles</p>
+            </div>
+            <div class="Rate">
+              <h5>Rate: </h5>
+              <p>$45 - $50 / hr</p>
+            </div>
+            <div class="profiles">
+              <a href="" class="btn">View Profiles <span class="arrow-right-up"><i
+                    class="fa-solid fa-arrow-up"></i></span></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="item item-freelancers position-relative">
+          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
+          <div class="top-content text-center">
+            <div class="avatar-freelancers text-center">
+              <img src="public/image/author-img6.jpg" alt="">
+            </div>
+            <h3 class="freelancers-name text-center">
+              Robert Fox
+            </h3>
+            <p class="freelancers-job text-center">
+              Nursing Assitant
+            </p>
+            <p class="review text-center"><i class="fa-solid fa-star"></i> <span class="vote">4.5</span> (2 review)</p>
+            <div class="tag-freelancers">
+              <a href="#" class="tag">Design Writing</a>
+              <a href="#" class="tag">Figma</a>
+              <span>+1</span>
+            </div>
+          </div>
+          <div class="bottom-content">
+            <div class="location">
+              <h5>Location: </h5>
+              <p>New York</p>
+            </div>
+            <div class="Rate">
+              <h5>Rate: </h5>
+              <p>$25 - $35 / hr</p>
+            </div>
+            <div class="profiles">
+              <a href="" class="btn">View Profiles <span class="arrow-right-up"><i
+                    class="fa-solid fa-arrow-up"></i></span></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="item item-freelancers position-relative">
+          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
+          <div class="top-content text-center">
+            <div class="avatar-freelancers text-center">
+              <img src="public/image/author-img.png" alt="">
+            </div>
+            <h3 class="freelancers-name text-center">
+              Ali Tufan
+            </h3>
+            <p class="freelancers-job text-center">
+              UI/UX Designer
+            </p>
+            <p class="review text-center"><i class="fa-solid fa-star"></i> <span class="vote">4.8</span> (4 review)</p>
+            <div class="tag-freelancers">
+              <a href="#" class="tag">Design Writing</a>
+              <a href="#" class="tag">Figma</a>
+              <span>+3</span>
+            </div>
+          </div>
+          <div class="bottom-content">
+            <div class="location">
+              <h5>Location: </h5>
+              <p>Los Angeles</p>
+            </div>
+            <div class="Rate">
+              <h5>Rate: </h5>
+              <p>$15 - $25 / hr</p>
+            </div>
+            <div class="profiles">
+              <a href="" class="btn">View Profiles <span class="arrow-right-up"><i
+                    class="fa-solid fa-arrow-up"></i></span></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="item item-freelancers position-relative">
+          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
+          <div class="top-content text-center">
+            <div class="avatar-freelancers text-center">
+              <img src="public/image/author-img7.jpg" alt="">
+            </div>
+            <h3 class="freelancers-name text-center">
+              Samuel Smith
+            </h3>
+            <p class="freelancers-job text-center">
+              Design & Creative
+            </p>
+            <p class="review text-center"><i class="fa-solid fa-star"></i> <span class="vote">4.0</span> (1 review)</p>
+            <div class="tag-freelancers">
+              <a href="#" class="tag">Design Writing</a>
+              <a href="#" class="tag">Figma</a>
+              <span>+1</span>
+            </div>
+          </div>
+          <div class="bottom-content">
+            <div class="location">
+              <h5>Location: </h5>
+              <p>New York</p>
+            </div>
+            <div class="Rate">
+              <h5>Rate: </h5>
+              <p>$15 - $25 / hr</p>
+            </div>
+            <div class="profiles">
+              <a href="" class="btn">View Profiles <span class="arrow-right-up"><i
+                    class="fa-solid fa-arrow-up"></i></span></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="item item-freelancers position-relative">
+          <a href="#" class="position-absolute pos-heart-icon"><i class="fa-regular fa-heart"></i></a>
+          <div class="top-content text-center">
+            <div class="avatar-freelancers text-center">
+              <img src="public/image/author-img5.jpg" alt="">
+            </div>
+            <h3 class="freelancers-name text-center">
+              Freelancers
+            </h3>
+            <p class="freelancers-job text-center">
+              Marketing Manger
+            </p>
+            <p class="review text-center"><i class="fa-solid fa-star"></i> <span class="vote">5.0</span> (1 review)</p>
+            <div class="tag-freelancers">
+              <a href="#" class="tag">Creative</a>
+              <a href="#" class="tag">Design Writing</a>
+              <span>+1</span>
+            </div>
+          </div>
+          <div class="bottom-content">
+            <div class="location">
+              <h5>Location: </h5>
+              <p>Los Angeles</p>
+            </div>
+            <div class="Rate">
+              <h5>Rate: </h5>
+              <p>$25 - $30 / hr</p>
+            </div>
+            <div class="profiles">
+              <a href="" class="btn">View Profiles <span class="arrow-right-up"><i
+                    class="fa-solid fa-arrow-up"></i></span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="quality">
+    <div class="row d-flex">
+      <div class="col-md-6">
+        <div class="content-left">
+          <h2 class="heading">A whole world of freelance
+            talent at your fingertips</h2>
+          <div class="proof-of-quality d-flex">
+            <div class="icon-quality"><img src="public/image/medal.png" alt=""></div>
+            <div class="content">
+              <h3>
+                Proof of quality
+              </h3>
+              <p>Check any pro’s work samples, client reviews, and identity verification.</p>
+            </div>
+          </div>
+          <div class="safe d-flex py-2">
+            <div class="icon-quality"><img src="public/image/money.png" alt=""></div>
+            <div class="content">
+              <h3>
+                Safe and secure
+              </h3>
+              <p>Check any pro’s work samples, client reviews, and identity verification.</p>
+            </div>
+          </div>
+          <div class="no-cost d-flex">
+            <div class="icon-quality"><img src="public/image/shield.png" alt=""></div>
+            <div class="content">
+              <h3>
+                No cost until you hire
+              </h3>
+              <p>Check any pro’s work samples, client reviews, and identity verification.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-md-center">
+        <div class="content-right ">
+          <ul class="table-background list">
+            <li><i class="fa-solid fa-check"></i> The best for every budget</li>
+            <li><i class="fa-solid fa-check"></i> Quality work done quickly</li>
+            <li><i class="fa-solid fa-check"></i> Protected payments, every time</li>
+            <li><i class="fa-solid fa-check"></i> 24/7 support</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- double slide show -->
+  <div class="testimonials">
+    <div class="content">
+      <h2>Testimonials</h2>
+      <p>Interdum et malesuada fames ac ante ipsum</p>
+      <div class="img-icon">
+        <img src="public/image/iconGreen.png" alt="">
+      </div>
+      <div class="carousel">
+        <div class="first-carousel owl-carousel owl-theme">
+          <div class="item">
+            <div class="description">
+              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam, eaque ipsa quae ab illo inventore veritatis "
+            </div>
+            <h3 class="fullname">Ali Tufan</h3>
+            <div class="job">Product Manager, Apple Inc</div>
+          </div>
+          <div class="item">
+            <div class="description">
+              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam, eaque ipsa quae ab illo inventore veritatis "</div>
+            <h3 class="fullname">Robert Fox</h3>
+            <div class="job">Medical Assistant</div>
+          </div>
+          <div class="item">
+            <div class="description">
+              "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+              dolores eos qui ratione voluptatem sequi nesciunt." </div>
+            <h3 class="fullname">Kristin Watson</h3>
+            <div class="job">Nursing Assistant</div>
+          </div>
+          <div class="item">
+            <div class="description">
+              "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+              dolores eos qui ratione voluptatem sequi nesciunt."</div>
+            <h3 class="fullname">Jane Cooper</h3>
+            <div class="job">Marketing Manager</div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="content-center">
+        <div class="second-slideshow">
+          <div class="second-carousel owl-carousel owl-theme">
+            <div class="item">
+              <div class="avatar">
+                <img src="public/image/author8.jpg" alt="" class="img-author-cir">
+              </div>
+
+            </div>
+            <div class="item">
+              <div class="avatar">
+                <img src="public/image/author-img5.jpg" alt="" class="img-author-cir">
+              </div>
+            </div>
+            <div class="item">
+              <div class="avatar">
+                <img src="public/image/author-img3.jpg" alt="" class="img-author-cir">
+              </div>
+            </div>
+            <div class="item">
+              <div class="avatar">
+                <img src="public/image/author-img4.jpg" alt="" class="img-author-cir">
+              </div>
+            </div>
+            <div class="item">
+              <div class="avatar">
+                <img src="public/image/author-img2.jpg" alt="" class="img-author-cir">
+              </div>
+            </div>
+          </div>
+         
+          
+         
+         
+         
+        </div>
+
+
+      </div>
+    </div>
+  
+
+  <!-- column  -->
+  <div class="instruction d-flex">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-9">
+        <div class="containt-column">
+          <h2>Need something done?</h2>
+          <p>Most viewed and all-time top-selling services</p>
+          <div class="row">
+            <div class="col-sm-4 col-12 instruction-col">
+              <div>
+                <img src="public/image/title.png" alt="">
+                <h5>Post a job</h5>
+                <p>It’s free and easy to post a job. Simply fill in a title, description.</p>
+
+              </div>
+            </div>
+            <div class="col-sm-4 col-12 instruction-col">
+              <div>
+                <img src="public/image/self-employed.png" alt="">
+                <h5>Choose freelancers</h5>
+                <p>It’s free and easy to post a job. Simply fill in a title, description.</p>
+
+              </div>
+            </div>
+            <div class="col-sm-4 col-12 instruction-col">
+              <div>
+                <img src="public/image/locked-card.png" alt="">
+                <h5>Pay safely</h5>
+                <p>It’s free and easy to post a job. Simply fill in a title, description.</p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- carousel  -->
+  <div class="membership">
+    <div class="title-top">
+      <h2>Membership Plans</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur.
+      </p>
+    </div>
+    <div class="contain-carousel">
+      <div class="carousel-membership owl-carousel owl-theme position-relative">
+        <div class="item item-membership">
+          <div class="top-content-cards text-center">
+            <div class="cards">
+              <h2>$29</h2>
+              <h4>Basic Plan</h4>
+              <p>One time fee for one listing or task highlighted in search results.</p>
+              <ul class="list">
+                <li>30 Listing</li>
+                <li>50 Days Visibility</li>
+                <li>Highlighted in Search Results</li>
+                <li>10 Revisions</li>
+                <li>9 days Delivery Time</li>
+                <li>Support 24/7</li>
+              </ul>
+              <a href="" class="btn">Add To Cart<span class="arrow-right-up"><i
+                    class="fa-solid fa-arrow-up"></i></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="item item-membership">
+          <div class="top-content-cards text-center">
+            <div class="cards">
+              <h2>$59</h2>
+              <h4>Standard Plan</h4>
+              <p>One time fee for one listing or task highlighted in search results.</p>
+              <ul class="list">
+                <li>40 Listing</li>
+                <li>60 Days Visibility</li>
+                <li>Highlighted in Search Results</li>
+                <li>10 Revisions</li>
+                <li>9 days Delivery Time</li>
+                <li>Support 24/7</li>
+              </ul>
+              <a href="" class="btn">Add To Cart<span class="arrow-right-up"><i
+                    class="fa-solid fa-arrow-up"></i></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="item item-membership">
+          <div class="top-content-cards text-center">
+            <div class="cards">
+              <h2>$89</h2>
+              <h4>Extended Plan</h4>
+              <p>One time fee for one listing or task highlighted in search results.</p>
+              <ul class="list">
+                <li>50 Listing</li>
+                <li>80 Days Visibility</li>
+                <li>Highlighted in Search Results</li>
+                <li>10 Revisions</li>
+                <li>9 days Delivery Time</li>
+                <li>Support 24/7</li>
+              </ul>
+              <a href="" class="btn">Add To Cart<span class="arrow-right-up"><i
+                    class="fa-solid fa-arrow-up"></i></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="item item-membership">
+          <div class="top-content-cards text-center">
+            <div class="cards">
+              <h2>$129</h2>
+              <h4>Enterprise Plan</h4>
+              <p>One time fee for one listing or task highlighted in search results.</p>
+              <ul class="list">
+                <li>60 Listing</li>
+                <li>90 Days Visibility</li>
+                <li>Highlighted in Search Results</li>
+                <li>10 Revisions</li>
+                <li>9 days Delivery Time</li>
+                <li>Support 24/7</li>
+              </ul>
+              <a href="" class="btn">Add To Cart<span class="arrow-right-up"><i
+                    class="fa-solid fa-arrow-up"></i></span></a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!--get started  -->
+  <div class="get-started  position-relative">
+    <div class="row">
+      <div class="col-12 col-md-7">
+        <div class="content">
+          <h2>Find the talent needed to get your business growing</h2>
+          <p>Advertise your jobs to millions of monthly users and search 15.8 million CVs</p>
+          <a href="" class="btn">Get Started<span class="arrow-right-up"><i class="fa-solid fa-arrow-up"></i></span></a>
+
+        </div>
+
+      </div>
+      <div class="col-12 col-md-5">
+        <img src="public/image/avatar.png" alt="image" class="img-get-started">
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- brand -->
+  <div class="brand position-relative text-center">
+    <p class="pb-3">Trusted by the world’s best</p>
+    <div class="">
+      <div class="brand-carousel owl-carousel owl-theme">
+        <div class="item">
+          <div class="img-item-brand">
+            <a href="#"><img src="public/image/brand1.png" alt="amazon"></a>
+          </div>
+
+        </div>
+        <div class="item">
+          <div class="img-item-brand">
+            <a href="#"><img src="public/image/brand2.png" alt="amd"></a>
+          </div>
+
+        </div>
+        <div class="item">
+          <div class="img-item-brand">
+            <a href="#"><img src="public/image/brand3.png" alt="cisco"></a>
+          </div>
+
+        </div>
+        <div class="item">
+          <div class="img-item-brand">
+            <a href="#"><img src="public/image/brand4.png" alt="dropcam"></a>
+          </div>
+
+        </div>
+        <div class="item">
+          <div class="img-item-brand">
+            <a href="#"><img src="public/image/brand5.png" alt="logitech"></a>
+          </div>
+
+        </div>
+        <div class="item">
+          <div class="img-item-brand">
+            <a href="#"><img src="public/image/brand6.png" alt="spotify"></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="Information-footer">
+        <div class="term">
+          <h5>Terms of Services</h5>
+          <h5 class="pleft">Privacy Policy</h5>
+          <h5 class="pleft">Site Map</h5>
+        </div>
+        <div class="contact">
+          <h2>Follow Us</h2>
+          <a class="facebook pleft">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a class="twitter pleft">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a class="instagram pleft">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a class="linkedin pleft">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <div class="middle-footer">
+        <div class="row">
+          <div class="col-md-4 col-lg-3">
+            <h2>About</h2>
+            <ul class="list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Become Seller</a></li>
+              <li><a href="#">Jobs on Freeio</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Services Freeio</a></li>
+              <li><a href="#">Terms of Services</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h2>categories</h2>
+            <ul class="list">
+              <li><a href="#">Design & Creative</a></li>
+              <li><a href="#">Development & IT</a></li>
+              <li><a href="#">Music & Audio</a></li>
+              <li><a href="#">Programming & Tech</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">Finance & Accounting</a></li>
+              <li><a href="#">Writing & Translation</a></li>
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">Lifestyle</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h2>Support</h2>
+            <ul class="list">
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">contact Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of Services</a></li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-3">
+            <h2>Subscribe</h2>
+            <form action="#">
+              <div class="row">
+                <div class="col-9 input-form">
+                  <input type="text" placeholder="Your email address">
+                </div>
+                <div class="col-3 button-send">
+                  <button type="submit">Send</button>
+                </div>
+              </div>
+            </form>
+            <h2>Apps</h2>
+            <a href="#" class="app"> <i class="fa-brands fa-apple"></i> iOS App</a>
+            <a href="#" class="app"><i class="fa-brands fa-android"></i> Android App</a>
+          </div>
+
+
+        </div>
+        <div class="bottom-footer">
+          <p>© Freeio. 2022 CreativeLayers. All rights reserved.</p>
+          <select name="option-language" id="language">
+            <option value="English">English</option>
+            <option value="Itali">Itali</option>
+            <option value=" French">French</option>
+
+          </select>
+        </div>
+      </div>
+
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="public/owlcarousel/owl.carousel.min.js"></script>
