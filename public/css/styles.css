@@ -69,15 +69,16 @@
         padding-left: 20px;
     }
 
-    
+
     .hidden-home .col-6 {
         padding: 0px;
     }
-    
+
     .hidden-home li:hover {
         background-color: #F0EFEC;
         border-left: #5BBB7B 2px solid;
     }
+
     .nav-hover:hover .nav-link {
         border-top: 2px solid #5bbb7b;
         color: #5bbb7b;
@@ -215,12 +216,12 @@
     }
 
     header .container-fluid {
-        padding: 0px 15px;
+        padding: 0px 0 0 15px;
         height: 100%;
     }
 
     .container-fluid .contain-navbar {
-        padding: 0 16px;
+        padding: 5px 0 5px 16px;
     }
 
     .navbar {
@@ -229,9 +230,11 @@
 
     /* column */
     .contain-column {
+        box-sizing: unset;
         background-color: #f0efec;
         padding: 30px 15px;
         padding-bottom: 60px;
+        width: 100%;
     }
 
     .fa-magnifying-glass {
@@ -405,7 +408,7 @@
         background-color: #fff;
         position: absolute;
         top: 45%;
-        left: -6px;
+        left: -8px;
         border: 1px solid #E9E9E9;
         width: 37px;
         height: 37px;
@@ -446,6 +449,7 @@
 
     .carousel-freelancers {
         padding-bottom: 20px;
+        padding-left:3px; 
     }
 
     .owl-dots {
@@ -472,9 +476,9 @@
     }
 
     .item {
+        margin-left: 20px;
         border-radius: 8px;
         overflow: hidden;
-
     }
 
     .brand .item {
@@ -670,10 +674,12 @@
     }
 
     .quality {
-        padding: 30px 0px;
+        padding: 30px 15px;
+        width: 100%;
+        box-sizing: unset;
         background: url(../image/bg.jpg);
         background-position: center;
-        background-repeat: no-repeat
+        background-repeat: no-repeat;
     }
 
     .content-left {
@@ -744,7 +750,9 @@
     }
 
     .testimonials {
-        padding: 20px 0px;
+        padding: 20px 15px;
+        box-sizing: unset;
+        width: 100%;
 
     }
 
@@ -828,13 +836,13 @@
     }
 
     .instruction {
-        background: url(../image/bg2.jpg
-);
+        background: url(../image/bg2.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        padding: 40px 0 30px 0px;
-        text-align:
-            center;
+        padding: 40px 15px 30px 15px;
+        text-align: center;
+        box-sizing: unset;
+        width: 100%;
     }
 
     .prices {
@@ -913,19 +921,24 @@
     }
 
     .top-content-cards a {
-        padding: 15px;
-        width: 90%;
+        padding: 14px;
+        width: 85%;
         border: 1px solid #000;
         transition: 0.2s;
+        margin-top: 12px;
     }
-
+    .cards p { 
+        font-size: 14px;
+    }
     .cards {
         box-sizing: border-box;
         margin: 10px 15px;
         padding: 10px 10px 40px 10px;
         border-radius: 16px;
     }
-
+    .cards li { 
+        font-size: 14px;
+    }
     .cards:hover {
         border: 1px solid rgb(233, 233, 233);
         margin: 10px 15px;
@@ -957,7 +970,8 @@
 
     .get-started {
         margin-top: 35px;
-        max-width: 100%;
+        box-sizing: unset;
+        width: 100%;
         background-image: url(../image/bg3.jpg);
         padding: 35px 10px 0px 20px;
         background-position: center;
@@ -1261,7 +1275,7 @@
             width: 85px !important;
         }
 
-        .second-slideshow .owl-item:nth-child(3) .img-author-cir{
+        .second-slideshow .owl-item:nth-child(3) .img-author-cir {
             padding: 10px;
             width: 50px;
             box-sizing: unset;
@@ -1433,9 +1447,7 @@
 
         }
 
-        .hide-on-mobile {
-            display: inline-flex;
-        }
+      
 
         .contain-column {
             border-radius: 24px;
@@ -1476,7 +1488,7 @@
         }
 
         .wrap-slideshow {
-            padding: 15px;
+            padding: 15px 0 0 28px;
             margin-top: 20px;
         }
     }
@@ -1485,7 +1497,12 @@
         .brand {
             padding: 100px 20px;
         }
-
+        .container-fluid .contain-navbar {
+            padding: 0 0 0 16px;
+        }
+        .hide-on-mobile {
+            display: inline-flex;
+        }
         .heading-category {
             width: 80px;
         }
@@ -1512,18 +1529,21 @@
     }
 
     @media (min-width:1700px) {
-        body { 
+        body {
             display: block;
             margin: 0 auto;
             width: 1700px;
         }
-        .get-started { 
+
+        .get-started {
             border-radius: 24px;
         }
-        .instruction { 
+
+        .instruction {
             border-radius: 24px;
             overflow: hidden;
         }
+
         header .width {
             background-size: contain;
 
