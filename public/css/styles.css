@@ -3,7 +3,7 @@
 
     body {
         font-family: 'DM Sans', sans-serif;
-
+        width: 99%;
     }
 
     .contain-login {
@@ -14,11 +14,10 @@
         background-color: #eef8f2;
     }
 
-    header .width {
-        /* padding: 0px 200px;
-        */
+    header .width {     
         max-width: 1700px;
         box-sizing: unset;
+        background-size: cover;
         background-image: url(../image/banner.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -475,7 +474,13 @@
         margin: 0px !important;
     }
 
-    .item {
+    .first-carousel .item {
+        margin-left: 20px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .second-slideshow .item {
+        width: 80px;
         margin-left: 20px;
         border-radius: 8px;
         overflow: hidden;
@@ -808,7 +813,7 @@
     }
 
     .avatar {
-        width: 90px;
+        width: 72px;
         display: flex;
         height: 90px;
         justify-content: center;
@@ -1031,6 +1036,7 @@
         background-color: #222222;
         border-radius: 16px 16px 0 0;
         padding: 15px;
+        box-sizing: unset;
     }
 
     .term {
@@ -1136,6 +1142,8 @@
         color: #fff;
         width: 100%;
         height: 100%;
+        text-align: right;
+        padding-right: 20px;
         border: none;
         box-sizing: border-box;
         border-top-right-radius: 8px;
@@ -1213,7 +1221,13 @@
         background-color: #f0efec;
         border-left: 2px solid #5BBB7B;
     }
-
+    .first-carousel .item { 
+        padding-top:0px;   
+        box-sizing: border-box;
+    }
+    .first-carousel .active { 
+        padding-top:0px;
+    }
     .blog li,
     .pages li {
         width: 230px;
@@ -1397,9 +1411,9 @@
             padding: 82px 10px 57px 20px;
         }
 
-        .content {
+        /* .content {
             padding-bottom: 66px;
-        }
+        } */
 
         .img-get-started {
             display: inline-block;
@@ -1410,7 +1424,7 @@
         }
 
         .instruction {
-            padding: 220px 0 220px 0px;
+            padding: 220px 30px 220px 0px;
         }
 
         .instruction-col>div {
